@@ -44,6 +44,7 @@ jobs:
             maxamx/rotten-potatoes:${{ github.run_number }}
             
   CD:
+    needs: [CI]
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
