@@ -34,7 +34,7 @@ jobs:
 
       
       - name: docker build and push
-        uses: docker/build-push-action@2.7.0
+        uses: docker/build-push-action@v2.7.0
         with: 
           context: ./src
           file: ./src/Dockerfile
